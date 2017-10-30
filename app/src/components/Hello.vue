@@ -15,6 +15,10 @@
     @Component()
 
     export default class Hello extends ParentComponent {
+        get computedMessage() {
+            return this.message + '!!!';
+        }
+
         helloMethod() {
             return new Promise((resolve, reject) => {
                 http.get('/hello')
