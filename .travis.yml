@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+env:
+  - NODE_ENV=test
+
+before_script:
+  - make dbuild # makes docker image
+
+script:
+  - make lint
+  - make test
