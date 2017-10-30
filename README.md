@@ -3,7 +3,7 @@
 ![Travis CI Build](https://travis-ci.org/fracasula/vuejs-karma-webpack.svg?branch=master)
 
 
-## Usage
+**Usage**
 
 * `make dbuild` (build the Docker image on top of `node:slim`)
 * `make install` (runs an `npm install` while mounting the container volume to get all installed files on the host)
